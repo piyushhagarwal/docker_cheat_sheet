@@ -8,9 +8,9 @@ Welcome to the Docker Cheatsheet! This cheat sheet provides a quick reference to
 - [Pull an Image](#pull-an-image)
 - [List Running Containers](#list-running-containers)
 - [List All Containers](#list-all-containers)
+- [Start a Container](#start-a-container)
 - [Run a Container](#run-a-container)
 - [Run a Container with Options](#run-a-container-with-options)
-- [Start a Container](#start-a-container)
 - [Stop a Container](#stop-a-container)
 - [Kill a Container](#kill-a-container)
 - [Remove a Container](#remove-a-container)
@@ -36,11 +36,15 @@ docker ps
 ```bash 
 docker ps -a
 ```
+## Start a container
+```bash 
+docker start <container_name/id>
+```
 ## Run a container
 ```bash 
 docker run <image_name>
 ```
-Create and run a container, giving it a random name
+Create and start a container, giving it a random name
 
 ## Run a container with options
 ```bash
@@ -53,10 +57,6 @@ Create and run a container with the specified options:
 - `--name <container_name>`: Specify a custom name for the container.
 - `-it`: Run the container in interactive mode (Eg. docker run -it node).
 
-## Start a container
-```bash 
-docker start <container_name/id>
-```
 ## Stop a container
 ```bash 
 docker stop <container_name/id>
