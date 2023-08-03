@@ -17,6 +17,7 @@ Welcome to the Docker Cheatsheet! This cheat sheet provides a quick reference to
 - [Remove a Container (Forcefully)](#remove-a-container-forcefully)
 - [Prune Images](#prune-images)
 - [Prune Containers](#prune-containers)
+- [Exec command](#exec-command)
 
 ## List all available images
 ```bash 
@@ -86,3 +87,9 @@ Remove all unused images
 docker container prune
 ```
 Remove all unused containers
+
+## Exec command
+```bash
+docker exec [OPTIONS] <container_name/id> COMMAND [ARG...]
+```
+To execute a command inside a running container.(Eg. docker exec -it my-sql-container bash)
