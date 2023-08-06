@@ -57,6 +57,7 @@ Create and run a container with the specified options:
 - `--rm`: Automatically remove the container when it exits.
 - `--name <container_name>`: Specify a custom name for the container.
 - `-it`: Run the container in interactive mode (Eg. docker run -it node).
+- `-e`: Used for mentioning the environment variables.
 
 ## Stop a container
 ```bash 
