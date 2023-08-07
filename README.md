@@ -58,6 +58,9 @@ Create and run a container with the specified options:
 - `--name <container_name>`: Specify a custom name for the container.
 - `-it`: Run the container in interactive mode (Eg. docker run -it node).
 - `-e`: Used for mentioning the environment variables.
+- `-v`: For mind bound volumes.
+Syntax: -v hostmachine_working_directory:docker_container_directory. 
+Eg. `-v ($pwd):/app` ( ($pwd) is a shortcut for getting current directory in mac or linux )
 
 ## Stop a container
 ```bash 
