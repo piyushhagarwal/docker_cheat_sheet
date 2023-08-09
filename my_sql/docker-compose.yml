@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=random_app
+      - MYSQL_USER=john
+      - MYSQL_PASSWORD=john
+    volumes:
+      - type: volume  # The type of volume (e.g., 'bind' or 'volume')
+        source: mysql-db  # The name of the volume
+        target: /my/own/datadir  # The target path inside the container
+
+volumes:
+  mysql-db:
