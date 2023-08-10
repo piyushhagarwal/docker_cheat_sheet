@@ -1,7 +1,7 @@
 # MySQL Docker Container Setup
 
 This repository contains a Docker Compose configuration to set up a MySQL container.
-Make sure you have Docker installed on your system before proceeding. Follow the steps below to get started:
+Make sure you have Docker and Docker compose installed on your system before proceeding. Follow the steps below to get started:
 
 ## 1. Clone the Repository and Navigate to the Folder
 
