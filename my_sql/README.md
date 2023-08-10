@@ -61,4 +61,4 @@ Remember to stop and remove the container when you're done:
 docker-compose down
 ```
 
-Note that your data wont be deleted after you remove the container because a volume is created in your docker. See the `docker-compose.yml` file for more clearity.
+Note that your data wont be deleted after you remove the container because a volume is created in your docker. See the `docker-compose.yml` file for more clarity.
